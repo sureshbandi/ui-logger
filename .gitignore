@@ -1,0 +1,10 @@
+node_modules
+.eslintcache
+.npmrc
+.yarn-error.log
+.nyc_output
+!.github/
+/coverage
+/build
+/dist
+/out-tsc
