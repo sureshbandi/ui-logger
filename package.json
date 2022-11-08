@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && tsc && rollup -c rollup.config.js",
+    "build": "rimraf dist && rollup -c rollup.config.js",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "format": "prettier \"src/**/*.{ts,js,css,scss}\" --write"
@@ -18,23 +18,17 @@
   "author": "Suresh Bandi",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
-    "@open-wc/building-rollup": "^2.0.2",
-    "@rollup/plugin-typescript": "^9.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "deepmerge": "^4.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
     "eslint": "^8.26.0",
     "prettier": "2.7.1",
     "rimraf": "^3.0.2",
     "rollup": "^3.2.5",
     "rollup-plugin-dts": "^5.0.0",
     "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-sourcemaps": "^0.6.3"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1"
   },
   "dependencies": {
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "typescript": "^4.8.4"
   }
 }
